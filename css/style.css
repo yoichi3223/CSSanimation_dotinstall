@@ -1,0 +1,20 @@
+body {
+  padding: 64px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  /* transition-delay: 1s; */
+  /* transform-origin: top right; */
+}
+
+.box:hover {
+  /* transform: translate(50px, 20px); */
+  /* transform: rotate(30deg); */
+  /* transform: scale(0.5, 2); */
+  transform: translateX(30px);
+}
