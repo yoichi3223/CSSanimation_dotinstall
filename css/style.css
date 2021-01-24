@@ -1,20 +1,111 @@
 body {
   padding: 64px;
 }
+button {
+  width: 300px;
+  padding: 8px 16px;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+}
+.message {
+  width: 300px;
+  padding: 8px 16px;
+  background: #2c2c2c;
+  color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  animation: popup 2s forwards;
+}
+@keyframes popup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    transform: none;
+    opacity: 1;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+/* .loading {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ccc;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s infinite linear;
+}
 
-.box {
-  width: 100px;
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* .btn {
+  padding: 16px 32px;
+  background-color: hsl(200, 100%, 40%);
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 1s;
+}
+.btn:hover {
+  background-color: hsl(200, 100%, 45%);
+} */
+/* width: 100px;
   height: 100px;
   background-color: orange;
-  transition-property: transform, background-color;
-  transition-duration: 0.3s;
-  /* transition-delay: 1s; */
-  /* transform-origin: top right; */
-}
+  animation: move 2s infinite 1s; */
+/* animation-name: move;
+  animation-duration: 2s; */
+/* animation-delay: 1s; */
+/* animation-fill-mode: forwards; */
 
+/* animation-direction: alternate;
+  animation-timing-function: linear; */
+/* animation-iteration-count: infinite; */
+/* transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out; */
+/* transition: transform 1s ease-out 1s, background 1s; */
+/* transition-delay: 1s; */
+/* transform-origin: top right; */
+
+/*
+@keyframes move {
+  0% {
+    transform: none;
+  }
+
+  70% {
+    transform: translateX(800px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(1000px) rotate(360deg);
+  } */
+
+/*
 .box:hover {
   /* transform: translate(50px, 20px); */
-  /* transform: rotate(30deg); */
-  /* transform: scale(0.5, 2); */
-  transform: translateX(30px);
-}
+/* transform: rotate(30deg); */
+/* transform: scale(0.5, 2); */
+/* transform: translateX(800px);
+  background: skyblue;
+} */
